@@ -1,0 +1,60 @@
+[package]
+name = "koh"
+version.workspace = true
+edition.workspace = true
+default-run = "koh"
+
+[[bin]]
+name = "koh"
+path = "main.rs"
+
+
+# [build-dependencies]
+# serde.workspace = true
+# toml.workspace = true
+# potk.workspace = true
+# anbar.workspace = true
+
+[dependencies]
+log.workspace = true
+potk.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+actix-web.workspace = true
+utoipa.workspace = true
+toml.workspace = true
+reqwest.workspace = true
+kaf.workspace = true
+
+argon2 = { version = "0.6" }
+
+rand = "0.10"
+
+actix-files = "0.7"
+actix-multipart = "0.8"
+cercis = "1.2"
+
+indexmap = "2.9.0"
+chrono = { version = "0.4.38", features = ["serde"] }
+dotenvy = "0.15.7"
+zstd = "0.14"
+
+
+# cercis = "1.2"
+# actix-cors = "0.7.1"
+# protobuf = "3.7.1"
+# indoc = "2"
+# libloading = "0.9.0"
+# minijinja = { version = "2.12.0", features = ["loader"] }
+# image = "0.25.2"
+# cercis = "1.2.0"
+# awc = { version = "3.5.1", features = ["openssl"] }
+# actix-utils = "3.0.1"
+# actix-web-httpauth = "0.8.2"
+# futures-util = "0.3.31"
+# futures = "0.3.31"
+# base64 = "0.22.1"
+# sha2 = "0.10.8"
+# mapack = { path = "../../00-team/mapack/mapack" }
+# reqwest = { version = "0.12.15", features = ["json"] }
